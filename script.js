@@ -1,5 +1,9 @@
 class ReversString {
     reversString(txt) {
+        txt = document.getElementById('field').value;
+        if ( txt.length < 1 ) {
+            return alert('Proszę wprowadzić wyraz i spróbować jeszcze raz')
+        }
         let arr = [];
         let arrRev = [];
             for ( let i = 0; i < txt.length; i++ ){
@@ -11,5 +15,7 @@ class ReversString {
     }
 }
 
-const text = new ReversString();
-console.log(text.reversString('yrreJ dna moT'));
+function display() {
+    const text = new ReversString();
+    alert(`Inwersja wyrazu brzmi: ${text.reversString()}`);
+}
