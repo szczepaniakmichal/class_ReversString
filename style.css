@@ -1,9 +1,9 @@
 #container{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 
 form{
-    text-align: center;
+    /* text-align: center; */
 }
